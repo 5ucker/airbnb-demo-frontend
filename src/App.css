@@ -1,28 +1,79 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Circular Air";
+  src: url("./circular/Circular_Air-Book.ttf") format("truetype"),
+    url("./circular/Circular_Air-Bold.ttf") format("truetype"),
+    url("./circular/Circular_Air-Light.ttf") format("truetype"),
+    url("./circular/Circular_Air-Book.woff") format("woff"),
+    url("./circular/Circular_Air-Bold.woff") format("woff"),
+    url("./circular/Circular_Air-Light.woff") format("woff");
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App {
+  text-align: left;
+  width: 1124px;
+  font-family: "Circular Air", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+  color: red; /* Цвет ссылки */
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background: rgba(255, 255, 0, 0.3);
+  height: 80px;
+  width: 100%;
+  vertical-align: center;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App-logo {
+  height: 32px;
+  padding: 24px;
+  width: 50%;
 }
 
-.App-intro {
-  font-size: large;
+.row {
+  display: flex;
+  background: rgba(255, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6 {
+  padding-right: 9px;
+  padding-left: 9px;
+  vertical-align: center;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.col1 {
+  flex-basis: 8.3333%;
+}
+.col2 {
+  flex-basis: 16.6666%;
+}
+.col3 {
+  flex-basis: 25%;
+}
+.col4 {
+  flex-basis: 33.3333%;
+}
+.col5 {
+  flex-basis: 41.6666%;
+}
+.col6 {
+  flex-basis: 50%;
 }
