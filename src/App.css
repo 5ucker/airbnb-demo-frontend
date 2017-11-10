@@ -12,6 +12,7 @@
   text-align: left;
   width: 1124px;
   font-family: "Circular Air", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #383838;
 }
 
 a:link {
@@ -28,22 +29,16 @@ a:hover {
   color: red; /* Цвет ссылки */
 }
 
-.App-header {
-  background: rgba(255, 255, 0, 0.3);
-  height: 80px;
-  width: 100%;
-  vertical-align: center;
-}
-
-.App-logo {
-  height: 32px;
-  padding: 24px;
-  width: 50%;
-}
-
 .row {
   display: flex;
-  background: rgba(255, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+.test {
+  _width: 430px;
+  _height: 100px;
+  _vertical-align: middle;
+  padding: 24px;
 }
 
 .col1,
@@ -52,11 +47,9 @@ a:hover {
 .col4,
 .col5,
 .col6 {
-  padding-right: 9px;
-  padding-left: 9px;
   vertical-align: center;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.3);
+  _box-sizing: border-box;
+  _background: rgba(0, 0, 0, 0.3);
 }
 
 .col1 {
