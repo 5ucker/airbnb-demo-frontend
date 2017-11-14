@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  _background: rgba(255, 0, 0, 0.5);
+}
+
+.line {
+  _background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  overflow: hidden;
+}

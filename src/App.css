@@ -10,9 +10,8 @@
 
 .App {
   text-align: left;
-  width: 1124px;
+  _width: 1124px;
   font-family: "Circular Air", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #383838;
 }
 
 a:link {
@@ -29,16 +28,10 @@ a:hover {
   color: red; /* Цвет ссылки */
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .test {
-  _width: 430px;
-  _height: 100px;
-  _vertical-align: middle;
   padding: 24px;
+  position: relative;
+  width: 100px;
 }
 
 .col1,
@@ -48,8 +41,6 @@ a:hover {
 .col5,
 .col6 {
   vertical-align: center;
-  _box-sizing: border-box;
-  _background: rgba(0, 0, 0, 0.3);
 }
 
 .col1 {
